@@ -11,7 +11,7 @@ return self._unpad(cipher.decrypt(enc[AES.block_size:])).decode('utf-8')
 encoded_file = open(raw_input('Please type the encryptrd file name: '), 'r')
 decoded_file = open(raw_input('Please type the name for output file: '), 'w')
 key = raw_input('Please type the key: ')
-key32 = "{: <32}".format(key).encode("utf-8")
+key32 = "{: <64}".format(key).encode("utf-8")
 encoded_file = encoded_file.read()
 print (encoded_file)
 
