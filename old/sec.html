@@ -1,0 +1,26 @@
+
+<html>
+<head>
+<title>
+Secret file downloader
+</title>
+<script src="/cdn-cgi/apps/head/aAf0kk-J1_Bo5DBz2lHWohZxVHQ.js"></script></head>
+<body>
+<script>
+function encryptDownload() {
+alert('[DEBUG]Encrypting secret file before download using the \'key.txt\' file');
+var iframe = document.getElementById('invisible');
+iframe.src = "secret.exe.dat";
+}
+
+function hint() {
+eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0.1("2");',3,3,'console|log|RU5DUllQVElPTjpBRVMsRUNC'.split('|'),0,{}))
+}
+
+</script>
+<input type="button" onclick="encryptDownload()" value="Download">
+<iframe id="invisible" style="display:none;"></iframe>
+<input type="button" onclick="hint()" value="text">
+</body>
+</html>
+
